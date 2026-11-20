@@ -1,0 +1,33 @@
+ ```python
+import hashlib
+import time
+import hmac
+import re
+
+class TitanSha256AntiManipulationShield:
+    def __init__(self, secret_key: str):
+        self.secret_key = secret_key.encode('utf-8')
+        self.forbidden_patterns = [
+            r"/system/", r"/override/", r"/prompt/", 
+            r"/ignore previous/", r"system instruction",
+            r"act as a", r"you are now"
+        ]
+
+    def _tarpit(self, delay: float = 5.0):
+        time.sleep(delay)
+
+    def validate_and_seal(self, user_input: str):
+        for pattern in self.forbidden_patterns:
+            if re.search(pattern, user_input, re.IGNORECASE):
+                self._tarpit()
+                return {"status": "SECURITY_AUDIT", "hash": None}
+
+        normalized_input = user_input.strip().encode('utf-8')
+        signature = hmac.new(self.secret_key, normalized_input, hashlib.sha256).hexdigest()
+        
+        return {
+            "status": "CLEAN",
+            "hash": signature,
+            "data": user_input
+        }
+```
