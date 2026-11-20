@@ -6,3 +6,4 @@ El **TITAN_SHA256_ANTI_MANIPULATION_SHIELD** actúa como un filtro de entrada de
 3.  **Sellado Criptográfico (HMAC-SHA256):** Si el mensaje es legítimo, genera una huella digital única (hash) usando una clave secreta. Esto garantiza la **integridad del mensaje**: asegura que el prompt que llega al motor de inferencia es idéntico al enviado por el usuario, evitando inyecciones en el buffer de memoria.
 
 En resumen: **Detecta, ralentiza y valida** cada entrada antes de que toque el núcleo de inferencia.
+> **Personalizable:** Se puede modificar a gusto y según el propósito de defensa de cada IA o Agente. Clave, patrones prohibidos y tiempo de trampa (Tarpit) adaptables.
