@@ -1,7 +1,7 @@
 AUTORÍA Y PROPIEDAD INTELECTUAL:
 Desarrollador: Eduardo Cáceres (Posadas, Misiones, Argentina)
-**Licencia de uso:** Se permite usar y modificar con fines personales y educativos, dando crédito al autor.
-**Prohibido:** Vender, comercializar, redistribuir con fines de lucro o reclamar la autoría.
+Se permite usar y modificar con fines personales y educativos, dando crédito al autor.
+Se puede Vender, comercializar, redistribuir con fines de lucro .siempre que se reconozca mi autoría 
 # TITAN_SHA256_ANTI_MANIPULATION_SHIELD-v1.0
 El **TITAN_SHA256_ANTI_MANIPULATION_SHIELD** actúa como un filtro de entrada de alta seguridad con tres funciones técnicas precisas:
 
